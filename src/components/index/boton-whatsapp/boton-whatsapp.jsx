@@ -4,13 +4,13 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 const BotonWhatsapp = () => {
   return (
     <FloatingWhatsApp
-      phoneNumber="573112897588"
-      accountName="MIND"
-      avatar="images/mind l.png"
+      phoneNumber="573112397588"
+      accountName="HENKO GKF"
+      avatar="images/forma1 dorado.png"
       statusMessage="En línea"
-      chatMessage="Bienvenido a MIND S.A.S BIC          ¿En qué podemos ayudarte?"
+      chatMessage="Bienvenido a Henko GFK          ¿En qué podemos ayudarte?"
       placeholder="Escribe tu mensaje..."
-      darkMode={false}
+      darkMode={true}
       allowClickAway={true}
     />
     );
