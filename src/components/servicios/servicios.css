@@ -1,0 +1,279 @@
+/* Container Styles */
+.container {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+
+/* Section Title Styles */
+.section-title2 {
+  font-size: 2em;
+  margin-top: 40px;
+  color: #044a29;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #f5a623;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+/* Services and Materials Grid Styles */
+.services-grid, .materials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  justify-items: center;
+  align-items: center;
+  max-width: calc(240px * 3 + 40px * 2); /* Ajusta el ancho máximo */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  width: 160px;
+  height: 220px;
+  position: relative;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: -20px;
+}
+
+.flip-card-front {
+  background-color: #044a29;
+}
+
+.flip-card-back {
+  background-color: #f5a623;
+  transform: rotateY(180deg);
+  color: black;
+}
+
+/* Icon Styles */
+.icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* Service and Material Title Styles */
+.service-title, .material-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Service and Material Description Styles */
+.service-description, .material-description {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+/* Adjust Flip Card Position */
+.flip-card-inner {
+  transform-origin: center;
+}
+
+/* Modal Styles */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background-color: #044a29;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 563px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #044a29;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+
+.modal-title {
+  color: white;
+  font-size: 1.8em;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.modal-body {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.modal-icon {
+  flex: 0 0 25%;
+  margin-right: 20px;
+}
+
+.modal-icon img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.modal-body p {
+  flex: 1;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+.modal-footer p {
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.modal-footer button {
+  background-color: #f5a623;
+  color: #044a29;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-footer button:hover {
+  background-color: #0d0d0d;
+  color: white;
+}
+
+/* Media Queries */
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .services-grid, .materials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 80%;
+  }
+
+  .flip-card {
+    margin-bottom: 30px; /* Añadir margen inferior entre tarjetas */
+  }
+
+  .modal {
+    max-width: 80%;
+  }
+
+  .modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-icon {
+    margin-right: 0;
+    margin-bottom: 10px; /* Reducir el margen inferior para acercar la imagen al texto */
+    margin-top: -10px; /* Subir la imagen en el modal */
+    width: 50%;
+  }
+
+  .modal-body p {
+    text-align: center;
+    margin-top: 17px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-grid, .materials-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .flip-card {
+    margin-bottom: 30px; /* Añadir margen inferior entre tarjetas */
+  }
+
+  .modal {
+    max-width: 90%;
+  }
+
+  .modal-body p {
+    font-size: 0.8em;
+    margin-top: 17px;
+
+  }
+
+  .modal-icon {
+    margin-right: 0;
+    margin-bottom: 10px; /* Reducir el margen inferior para acercar la imagen al texto */
+    margin-top: -10px; /* Subir la imagen en el modal */
+    width: 50%;
+  }
+
+  .pdf-button {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+}

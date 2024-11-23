@@ -1,0 +1,92 @@
+.proyectos-pagina,
+.proyectos-container,
+.imagenes-proyectos,
+.proyecto-img {
+  position: relative;
+}
+
+.proyectos-pagina {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.proyectos-container {
+  align-items: center;
+  text-align: center;
+  margin: 3% 15% 1%;
+}
+
+.proyectos-container h2 {
+  margin-top: 0;
+  font-size: 25px;
+  color: #006278;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-buttons button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 9px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 2px solid #006278;
+  color: #006278;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+  background-color: #006278;
+  color: #ffffff;
+}
+
+.imagenes-proyectos {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.proyecto-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+@media (max-width: 1540px) {
+  .imagenes-proyectos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1176px) {
+  .imagenes-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .proyectos-container h2 {
+    margin-top: 5%;
+    font-size: 20px;
+  }
+
+  .imagenes-proyectos {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}

@@ -1,0 +1,274 @@
+.design-section {
+  flex-grow: 1;
+  padding: 32px;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 2.8rem; /* Tamaño de fuente mayor */
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #044a29;
+  text-align: center;
+}
+
+.section-description {
+  margin-bottom: 32px;
+  text-align: justify;
+  max-width: 800px;
+  color: #044a29;
+  font-size: 1.4rem; /* Tamaño de fuente mayor */
+}
+
+.feature-container {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.feature-item {
+  display: flex;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.feature-item.left {
+  flex-direction: row;
+}
+
+.feature-item.right {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  width: 30%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.575);
+}
+
+.feature-text {
+  width: 50%;
+  padding: 16px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  font-size: 1.4rem; /* Tamaño de fuente mayor */
+}
+
+.icon-container {
+  font-size: 10rem;
+  margin-bottom: 8px;
+  color: #f5a623;
+}
+
+.feature-title {
+  font-weight: bold;
+  color: #044a29;
+  font-size: 2.8rem; /* Tamaño de fuente mayor */
+}
+
+.feature-description {
+  color: #666666;
+  text-align: justify;
+  font-size: 1.6rem; /* Tamaño de fuente mayor */
+}
+
+.additional-info {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  max-width: 800px;
+}
+
+.additional-title {
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 2.4rem; /* Tamaño de fuente mayor */
+}
+
+.additional-description {
+  color: #555;
+  font-size: 1.4rem; /* Tamaño de fuente mayor */
+}
+
+/* Estilos para 1440px */
+@media screen and (max-width: 1440px) {
+  .feature-container {
+    max-width: 1200px;
+  }
+
+  .feature-item.left,
+  .feature-item.right {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Estilos para 1200px */
+@media screen and (max-width: 1200px) {
+  .feature-container {
+    max-width: 1000px;
+  }
+
+  .section-description {
+    max-width: 700px;
+    font-size: 1.3rem; /* Ajuste del tamaño del texto de la descripción */
+  }
+
+  .feature-title {
+    font-size: 2.6rem; /* Ajuste del tamaño del texto del título de la característica */
+  }
+
+  .feature-description {
+    font-size: 1.5rem; /* Ajuste del tamaño del texto de la descripción de la característica */
+  }
+
+  .additional-title {
+    font-size: 2.2rem; /* Ajuste del tamaño del texto del título adicional */
+  }
+
+  .additional-description {
+    font-size: 1.3rem; /* Ajuste del tamaño del texto de la descripción adicional */
+  }
+}
+
+/* Estilos para 1024px */
+@media screen and (max-width: 1024px) {
+  .feature-container {
+    max-width: 900px;
+  }
+
+  .section-description {
+    max-width: 600px;
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la descripción */
+  }
+
+  .feature-image {
+    width: 40%;
+  }
+
+  .feature-text {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la característica */
+  }
+
+  .feature-title {
+    font-size: 2.4rem; /* Ajuste del tamaño del texto del título de la característica */
+  }
+
+  .feature-description {
+    font-size: 1.4rem; /* Ajuste del tamaño del texto de la descripción de la característica */
+  }
+
+  .additional-title {
+    font-size: 2rem; /* Ajuste del tamaño del texto del título adicional */
+  }
+
+  .additional-description {
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la descripción adicional */
+  }
+}
+
+/* Estilos para 768px */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .feature-container {
+    max-width: 90%;
+  }
+
+  .feature-item,
+  .feature-item.left,
+  .feature-item.right {
+    flex-direction: column;
+  }
+
+  .feature-image {
+    width: 80%;
+    margin-bottom: 16px;
+  }
+
+  .feature-text {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem; /* Ajuste del tamaño del texto de la característica */
+  }
+
+  .icon-container {
+    font-size: 8rem;
+  }
+
+  .feature-title {
+    font-size: 2rem; /* Ajuste del tamaño del texto del título de la característica */
+  }
+
+  .feature-description {
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la descripción de la característica */
+  }
+
+  .additional-title {
+    font-size: 1.8rem; /* Ajuste del tamaño del texto del título adicional */
+  }
+
+  .additional-description {
+    font-size: 1.1rem; /* Ajuste del tamaño del texto de la descripción adicional */
+  }
+}
+
+/* Estilos para 480px */
+@media screen and (max-width: 480px) {
+  .design-section {
+    padding: 16px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .feature-image {
+    width: 100%;
+  }
+
+  .icon-container {
+    font-size: 6rem;
+  }
+
+  .feature-title {
+    font-size: 1.8rem; /* Ajuste del tamaño del texto del título de la característica */
+  }
+
+  .feature-description {
+    font-size: 1rem; /* Ajuste del tamaño del texto de la descripción de la característica */
+  }
+
+  .additional-title {
+    font-size: 1.6rem; /* Ajuste del tamaño del texto del título adicional */
+  }
+
+  .additional-description {
+    font-size: 1rem; /* Ajuste del tamaño del texto de la descripción adicional */
+  }
+}

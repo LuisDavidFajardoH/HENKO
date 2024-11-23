@@ -1,0 +1,80 @@
+@import url('https://use.typekit.net/roh1jqg.css');
+
+
+@font-face {
+  font-family: 'Bell MT';
+  src: url('/fonts/Bell MT.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Tipografía Secundaria: Adobe Gurmukhi (desde Adobe Fonts) */
+
+/* Estilos Globales */
+body {
+  font-family: 'Bell MT', serif; /* Fuente principal */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #044a29; /* Verde oscuro */
+  background-color: #f4f4f4; /* Fondo neutro */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bell MT', serif; /* Encabezados con fuente principal */
+  color: #044a29;
+  
+}
+
+
+.bold-text {
+  font-family: "adobe-gurmukhi", sans-serif;
+  font-weight: 700; /* Negrita */
+}
+
+/* Botones */
+button {
+  font-family: 'Bell MT', serif;
+  background-color: #f5a623; /* Amarillo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #d8941c; /* Amarillo oscuro */
+}
+
+/* Contenedores */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #044a29; /* Verde oscuro */
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Variables de Colores */
+:root {
+  --verde-oscuro: #044a29;
+  --verde: #028f50;
+  --amarillo: #f5a623;
+  --gris-oscuro: #333333;
+}

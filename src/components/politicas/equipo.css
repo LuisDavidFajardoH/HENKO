@@ -1,0 +1,152 @@
+/* Estilo general para la sección de equipo */
+.section-background {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.team-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-section .title {
+  font-family: 'Bell MT', serif;
+  font-weight: bold;
+  color: #044a29;
+}
+
+.text-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-box .text {
+  font-family: "adobe-gurmukhi", sans-serif;
+  color: #666;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.values-section {
+  margin-top: 40px;
+}
+
+.values-section .title {
+  font-family: 'Bell MT', serif;
+  font-weight: bold;
+  color: #044a29;
+  margin-bottom: 34px;
+  margin-left: 40%;
+}
+
+.value-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.value-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.value-box .icon {
+  color: #044a29;
+  margin-bottom: 10px;
+}
+
+.value-box .text {
+  font-family: "adobe-gurmukhi", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Estilo para la sección de fundadoras */
+.additional-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.additional-section .title {
+  font-family: 'Bell MT', serif;
+  font-weight: bold;
+  color: #044a29;
+  margin-bottom: 30px;
+}
+
+.founders-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder-card {
+  text-align: center;
+  max-width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.founder-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.founder-name {
+  font-family: 'Bell MT', serif;
+  font-weight: bold;
+  color: #044a29;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.founder-role {
+  font-family: "adobe-gurmukhi", sans-serif;
+  color: #666;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    padding: 10px;
+  }
+
+  .values-section .title,
+  .additional-section .title {
+    font-size: 1.5rem;
+  }
+
+  .value-box .text {
+    font-size: 0.9rem;
+  }
+
+  .founders-section {
+    gap: 20px;
+  }
+
+  .founder-card {
+    max-width: 200px;
+  }
+}
