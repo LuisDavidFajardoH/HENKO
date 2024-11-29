@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { FacebookFill, LinkedinBoxFill, InstagramFill, Envelope, Phone, Location } from 'akar-icons';
+import { FacebookFill, LinkedinBoxFill, TiktokFill, Envelope, Phone, Location } from 'akar-icons';
 
 const Footer = () => {
   return (
@@ -30,14 +30,14 @@ const Footer = () => {
         <div className="footer-row">
           <h4>Síguenos</h4>
           <div className="red-social">
-            <a href="https://www.facebook.com/HENKOGKF" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61566950528041&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
               <FacebookFill strokeWidth={2} size={28} />
             </a>
-            <a href="https://www.linkedin.com/company/henkogkf" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.linkedin.com/in/henko-gk-finance-sas-9a5a93339" target="_blank" rel="noopener noreferrer">
               <LinkedinBoxFill strokeWidth={2} size={30} />
             </a>
-            <a href="https://www.instagram.com/henkogkf" target="_blank" rel="noopener noreferrer">
-              <InstagramFill strokeWidth={2} size={30} />
+            <a href="https://www.tiktok.com/@henko.gk.finance?_t=8rdYrKcvq4N&_r=1" target="_blank" rel="noopener noreferrer">
+              <TiktokFill strokeWidth={2} size={30} />
             </a>
           </div>
         </div>

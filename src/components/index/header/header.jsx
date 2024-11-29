@@ -26,7 +26,7 @@ const Header = () => {
           />
         </div>
         <div className="content">
-          <div className="header-text">
+          <div className="header-text">S
             <h1>HENKO GKF</h1>
             <p>Tu salud financiera en las manos correctas</p>
             <a href="/contactenos" className="btn-primary">
@@ -34,7 +34,15 @@ const Header = () => {
             </a>
           </div>
           <div className="logo-background">
-            <img src="/images/henkof 3.png" alt="Logo HENKO" className="logo" />
+            <video
+              src="/images/LogoV.mp4" // Ruta al archivo de video
+              autoPlay
+              loop
+              muted
+              className="logo-video"
+            >
+              Tu navegador no soporta videos HTML5.
+            </video>
           </div>
         </div>
       </header>
