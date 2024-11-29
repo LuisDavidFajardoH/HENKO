@@ -13,14 +13,14 @@ const Landing = () => {
   return (
     <>
       <Helmet>
-        <title>Landing Page - Bienvenidos a Mind | Innovación en Metal</title>
+        <title>HENKO | Líderes en Soluciones Industriales</title>
         <meta
           name="description"
-          content="Bienvenidos a Mind. Descubre nuestra empresa, misión, visión y portafolio de proyectos. Innovación y soluciones de metal para el sector industrial colombiano."
+          content="HENKO es tu aliado en soluciones industriales. Especialistas en diseño y fabricación de estructuras metálicas, equipos especializados y sistemas de seguridad industrial."
         />
         <meta
           name="keywords"
-          content="Mind, landing page, innovación en metal, proyectos de metal, sector industrial colombiano, misión, visión, portafolio, metalmecánica, corte de metal, doblado de metal, curvado de lámina, perforado, punzonado CNC, soldadura Mig, soldadura Tig, pintura electrostática, transformación del metal"
+          content="HENKO, soluciones industriales, fabricación especializada, estructuras metálicas, diseño industrial, seguridad industrial, equipamiento industrial, innovación industrial, calidad industrial, proyectos industriales"
         />
       </Helmet>
 

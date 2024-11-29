@@ -1,14 +1,14 @@
 {
-  "short_name": "Mind",
-  "name": "Mind SAS BIC",
+  "short_name": "Henko",
+  "name": "Henko",
   "icons": [
     {
-      "src": "/images/MIND.PNG",
+      "src": "/images/Henko.PNG",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/MIND.ico",
+      "src": "/images/Henko.ico",
       "type": "image/x-icon",
       "sizes": "64x64 32x32 24x24 16x16"
     }

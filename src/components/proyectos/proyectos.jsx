@@ -333,15 +333,15 @@ const Proyectos = () => {
   return (
     <>
       <Helmet>
-      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
-        <title>Proyectos - Mind SAS BIC | Innovación en Metalmecánica</title>
+        <link rel="icon" href="/images/HENKO.ico" type="image/x-icon" />
+        <title>Proyectos - HENKO | Soluciones Industriales Innovadoras</title>
         <meta
           name="description"
-          content="Explora algunos de nuestros proyectos en Mind SAS BIC. Desde canastas para izaje hasta carros y estantes, descubre nuestras soluciones de metalmecánica innovadoras y de alta calidad."
+          content="Explora nuestra galería de proyectos en HENKO. Descubre nuestras soluciones industriales personalizadas, incluyendo escaleras, guardas, gabinetes y equipos especializados."
         />
         <meta
           name="keywords"
-          content="Mind SAS BIC, proyectos metalmecánicos, canasta para izaje, carro para cilindros, estante estructural, remolque, soluciones de metal, metalmecánica, innovación en metal, plataforma petrolera, industria automotriz, tubería estructural, malla metálica, varillas, soporte para líneas de vida, armellas, argollas certificadas, recubrimiento rico en zinc, pintura epóxica, pintura poliéster electrostática, limpieza con sand blasting, vehículo con ejes, sistema de tiro, guardabarros, lámina alfajor, diseño de metal, fabricación de metal, transporte de cilindros, acabados de alta resistencia"
+          content="HENKO, proyectos industriales, escaleras industriales, guardas de seguridad, gabinetes industriales, soportes metálicos, equipos especializados, soluciones metalmecánicas, fabricación industrial, diseño industrial, muebles industriales, estructuras metálicas"
         />
       </Helmet>
       <Navbar />

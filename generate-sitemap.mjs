@@ -16,7 +16,7 @@ const links = [
   { url: '/contactenos', changefreq: 'monthly', priority: 0.8 },
 ];
 
-const sitemap = new SitemapStream({ hostname: 'https://www.metalmindsa.com/' });
+const sitemap = new SitemapStream({ hostname: 'https://www.HenKO.com/' });
 const writeStream = createWriteStream(resolve(__dirname, 'public', 'sitemap.xml'));
 
 writeStream.on('close', () => {
