@@ -20,6 +20,7 @@ const Descripcion = () => {
             className="imagen1"
             src="/images/letrasColor.png"
             alt="Logo HENKO GKF"
+            loading="lazy"
           />
         </div>
         <div className="descripcion">

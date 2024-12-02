@@ -15,20 +15,36 @@
   z-index: 1;
 }
 
+.header-content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 3;
+}
+
 .logo-video {
-  width: 425px;
+  width: 100%;
   height: auto;
-  border-radius: 5%;
+  object-fit: contain; /* Asegura que el video se ajuste correctamente */
   display: block;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .background-image {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filtro oscuro */
   filter: brightness(0.5);
+  z-index: 0;
+}
+
+.mobile-image {
+  display: none;
 }
 
 .video-container {
@@ -57,14 +73,12 @@
 .content {
   position: absolute;
   top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  z-index: 3;
   width: 90%;
+  max-width: 1400px;
 }
 
 .content .header-text {
@@ -100,19 +114,52 @@
 }
 
 .logo-background {
-  background-color: rgba(96, 100, 16, 0); /* Fondo semitransparente */
+  background-color: transparent;
   border-radius: 3%;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 20px auto 0;
+  z-index: 10;
 }
 
 .logo {
   height: 200px;
   width: auto;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.logo-fallback {
+  display: block; /* Mostrar la imagen de fallback cuando se renderiza */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .logo-video {
+    width: 350px;
+  }
+
+  .content h1 {
+    font-size: 3em;
+  }
+
+  .content p {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -132,7 +179,85 @@
   }
 
   .logo-background {
-    margin-top: 20px;
+    background-color: transparent;
+    position: relative;
+    z-index: 999;
+    width: 300px;
+    height: auto;
+    margin: 20px auto 0;
+    display: flex !important;
+  }
+
+  .header-content-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .logo-background .logo-video { /* Aumentar la especificidad */
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover; /* Ajuste para mejor visualización en móviles */
+    -webkit-object-fit: cover; /* Prefijo para WebKit */
+    z-index: 10;
+    display: block !important; /* Forzar visualización */
+  }
+
+  .logo-fallback {
+    display: block; /* Asegura que se muestre en móviles */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    z-index: 10;
+  }
+
+  .content h1 {
+    font-size: 2.5em;
+  }
+
+  .content p {
+    font-size: 1.8em;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+  
+  .mobile-image {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+    width: 300px;
+    height: auto;
+    z-index: 999;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-video {
+    width: 250px;
+  }
+
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content p {
+    font-size: 1.4em;
+  }
+
+  .btn-primary {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
   }
 }
 
@@ -164,4 +289,61 @@
   .logo-background {
     margin-top: 20px;
   }
+}
+
+@media (max-width: 375px) {
+  .logo-video {
+    width: 200px;
+  }
+
+  .content h1 {
+    font-size: 1.8em;
+  }
+
+  .content p {
+    font-size: 1.2em;
+  }
+
+  .header-content-wrapper {
+    gap: 1rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .header {
+    min-height: 100vh;
+  }
+
+  .logo-video {
+    width: 200px;
+  }
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Eliminadas reglas específicas para iOS que podrían ocultar el video */
+@supports (-webkit-overflow-scrolling: touch) {
+  /* ...existing code... */
+}
+
+.logo-background .logo-video {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Asegura que el video se ajuste correctamente */
+  -webkit-object-fit: contain; /* Prefijo para WebKit */
+  display: block;
+  margin: 0 auto;
+  z-index: 10;
+  /* Añadir prefijos para asegurar compatibilidad */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }

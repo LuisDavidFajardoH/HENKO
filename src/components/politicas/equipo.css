@@ -1,7 +1,7 @@
 /* Estilo general para la sección de equipo */
 .section-background {
   background-color: #f8f9fa;
-  padding: 60px 0;
+  padding: clamp(2rem, 5vw, 4rem) 0;
 }
 
 .team-section {
@@ -13,12 +13,13 @@
   font-family: 'Bell MT', serif;
   font-weight: bold;
   color: #044a29;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 
 .text-box {
-  max-width: 800px;
+  max-width: min(800px, 90%);
   margin: 0 auto;
-  padding: 20px;
+  padding: clamp(1rem, 3vw, 2rem);
 }
 
 .text-box .text {
@@ -36,8 +37,10 @@
   font-family: 'Bell MT', serif;
   font-weight: bold;
   color: #044a29;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 34px;
-  margin-left: 40%;
+  margin-left: 0;
+  text-align: center;
 }
 
 .value-box {
@@ -45,12 +48,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: clamp(1rem, 2vw, 1.5rem);
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  min-height: 150px;
 }
 
 .value-box:hover {
@@ -66,7 +70,7 @@
 .value-box .text {
   font-family: "adobe-gurmukhi", sans-serif;
   color: #333;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
   line-height: 1.5;
 }
 
@@ -92,13 +96,14 @@
 
 .founder-card {
   text-align: center;
-  max-width: 250px;
+  max-width: min(250px, 90%);
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
 }
 
 .founder-card:hover {
@@ -107,8 +112,8 @@
 }
 
 .founder-image {
-  width: 100px;
-  height: 100px;
+  width: clamp(80px, 15vw, 100px);
+  height: clamp(80px, 15vw, 100px);
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -128,7 +133,22 @@
   font-size: 1rem;
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+  .values-section .title {
+    margin-bottom: 1.5rem;
+  }
+  
+  .founders-section {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .section-background {
+    padding: 2rem 0;
+  }
+
   .text-box {
     padding: 10px;
   }
@@ -142,11 +162,38 @@
     font-size: 0.9rem;
   }
 
+  .value-box {
+    min-height: 120px;
+  }
+
   .founders-section {
-    gap: 20px;
+    gap: 15px;
   }
 
   .founder-card {
     max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box .text {
+    font-size: 0.9rem;
+  }
+
+  .value-box {
+    margin: 0.5rem;
+    min-height: 100px;
+  }
+
+  .founder-card {
+    padding: 1rem;
+  }
+
+  .founder-name {
+    font-size: 1rem;
+  }
+
+  .founder-role {
+    font-size: 0.875rem;
   }
 }

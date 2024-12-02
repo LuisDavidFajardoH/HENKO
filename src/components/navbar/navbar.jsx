@@ -37,8 +37,8 @@ const Navbar = () => {
             <a href="/equipo">Nuestro Equipo</a>
           </li>
 
-          <li className={`navbar-item ${location.pathname === '/contactenoss' ? 'active' : ''}`}>
-            <a href="/contactenoss" className="contact-button">Contáctenos</a>
+          <li className={`navbar-item ${location.pathname === '/contactenos' ? 'active' : ''}`}>
+            <a href="/contactenos" className="contact-button">Contáctenos</a>
           </li>
         </ul>
       </div>

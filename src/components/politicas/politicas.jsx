@@ -95,7 +95,7 @@ const Equipo = () => {
                   xs={12}
                   sm={6}
                   md={4}
-                  lg={3}
+                  lg={2}
                   key={index}
                   style={{ display: "flex", justifyContent: "center" }}
                 >
@@ -119,7 +119,7 @@ const Equipo = () => {
             </Typography>
             <Box className="founders-section">
               <Grid container spacing={4} justifyContent="center">
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={12} md={6} lg={4}>
                   <Box className="founder-card">
                     <img
                       src="/images/giovanna-rivera.jpg"
@@ -134,7 +134,7 @@ const Equipo = () => {
                     </Typography>
                   </Box>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={12} md={6} lg={4}>
                   <Box className="founder-card">
                     <img
                       src="/images/karen-aguirre.jpg"
